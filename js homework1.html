@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grocery Shop Calculator</title>
+</head>
+<body>
+
+<script>
+  var ricePrice = 60, riceQty = 2;
+  var sugarPrice = 50, sugarQty = 3;
+  var wheatPrice = 40, wheatQty = 5;
+
+  var riceCost = ricePrice * riceQty;
+  var sugarCost = sugarPrice * sugarQty;
+  var wheatCost = wheatPrice * wheatQty;
+
+  console.log("Rice cost: ₹" + riceCost);
+  console.log("Sugar cost: ₹" + sugarCost);
+  console.log("Wheat cost: ₹" + wheatCost);
+
+
+  var totalBill = riceCost + sugarCost + wheatCost;
+  console.log("Total bill: ₹" + totalBill);
+
+  wheatQty = 4;
+
+  wheatCost = wheatPrice * wheatQty;
+  totalBill = riceCost + sugarCost + wheatCost;
+
+  console.log("Updated total bill after changing wheat quantity: ₹" + totalBill);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Store Sales</title>
+</head>
+<body>
+
+<p id="initial"></p>
+<p id="updated"></p>
+
+<script>
+  var tshirtCount = 5, tshirtPrice = 400;
+  var capCount = 3, capPrice = 150;
+
+  var total = (tshirtCount * tshirtPrice) + (capCount * capPrice);
+  document.getElementById('initial').innerText = "Total earnings (initial): ₹" + total;
+
+  tshirtPrice = 450;
+  total = (tshirtCount * tshirtPrice) + (capCount * capPrice);
+  document.getElementById('updated').innerText = "Total earnings (after price update): ₹" + total;
+</script>
+
+</body>
+</html>
